@@ -1,0 +1,9 @@
+.skills-text{
+	text-align:left;
+}
+
+@media (min-width:768px){
+	.skills-text{
+		text-align:right;
+	}
+}
