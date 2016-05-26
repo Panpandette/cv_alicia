@@ -14,3 +14,8 @@
     top: 2px;
     position: relative;
 }
+
+#home .container{
+	background-color: rgba(21,175,151, 0.5);
+    padding: 20px 0px;
+}
