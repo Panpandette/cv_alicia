@@ -80,7 +80,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 }
 
 .border-top-color2{
-    border-top:7px solid #F28C83;
+    border-top:7px solid #88C7C2;
 }
 
 .color1 .service-icon,
@@ -94,11 +94,11 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 
 .color2 .service-icon,
 .color2.service-item ul li:nth-child(2):before{
-    background:#F28C83;
+    background:#88C7C2;
 }
 
 .color2 .service-icon:after{
-    border:3px solid #F28C83;
+    border:3px solid #88C7C2;
 }
 
 .color3 .service-icon,
@@ -108,6 +108,15 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 
 .color3 .service-icon:after{
     border:3px solid #334959;
+}
+
+.color4 .service-icon,
+.color4.service-item ul li:nth-child(2):before{
+    background:#64758E;
+}
+
+.color4 .service-icon:after{
+    border:3px solid #64758E;
 }
 
 /*------------------
@@ -190,7 +199,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     display: inline-block;
     font-size:24px;
     font-weight:700;
-    color: #15AF97;
+    color: #fff;
     text-transform: uppercase;
 }
 
@@ -219,7 +228,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 }
 
 #main-nav{
-    background:transparent;
+    background: #429999;
     color:#fff;
     box-shadow:0 0 0px transparent;
     -webkit-transition:background 0.3s ease-out;
@@ -276,7 +285,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 
 #main-nav.scrolled .nav li.active a,
 #main-nav.scrolled .nav a:hover{
-    color: #F28C83;
+    color: #88C7C2;
 }
 
 /*-----------------------
