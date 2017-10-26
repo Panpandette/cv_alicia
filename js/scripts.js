@@ -18,7 +18,12 @@ $(document).ready(function() {
   
   $('#home').height($(window).height()+50);
   
-  $.backstretch('./img/bg-header.jpg');
+  if (window.location.pathname.includes('index')){
+    $.backstretch('./img/BG_HEADER_FR.jpg');
+  }else{
+    $.backstretch('./img/BG_HEADER_EN.jpg');
+  }
+  
   
   $(window).scroll( function() {
     var st = $(this).scrollTop(),

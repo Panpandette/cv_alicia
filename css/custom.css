@@ -50,3 +50,9 @@ video {
   color:#353F50;
   text-shadow: 2px 2px 0 #CAE3DD;
 }
+
+@media (max-width: 991px){
+  #main-nav li {
+    margin: 0px;
+  }
+}
