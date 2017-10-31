@@ -18,10 +18,10 @@ $(document).ready(function() {
   
   $('#home').height($(window).height()+50);
   
-  if (window.location.pathname.includes('index')){
-    $.backstretch('./img/BG_HEADER_FR.jpg');
-  }else{
+  if (window.location.pathname.includes('en.html')){
     $.backstretch('./img/BG_HEADER_EN.jpg');
+  }else{
+    $.backstretch('./img/BG_HEADER_FR.jpg');
   }
   
   
