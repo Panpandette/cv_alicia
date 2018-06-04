@@ -18,11 +18,11 @@ $(document).ready(function() {
 
   $('#home').height($(window).height()+50);
 
-  // if (window.location.pathname.includes('en.html')){
-  //   $.backstretch('./img/BG_HEADER_EN.jpg');
-  // }else{
-  //   $.backstretch('./img/BG_HEADER_FR.jpg');
-  // }
+  if (window.location.pathname.includes('en.html')){
+    $.backstretch('./img/BG_HEADER_EN.jpg');
+  }else{
+    $.backstretch('./img/BG_HEADER_FR.jpg');
+  }
 
 
   $(window).scroll( function() {
@@ -66,7 +66,7 @@ $(document).ready(function() {
   // else{
   //   $('#main-nav').addClass('scrolled');
   // }
-  //
+
   // $(window).scroll(function(){
   //   if ($(window).scrollTop()< ($(window).height()-50)){
   //     $('#main-nav').removeClass('scrolled');
