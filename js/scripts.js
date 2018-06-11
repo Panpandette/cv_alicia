@@ -21,7 +21,7 @@ $(document).ready(function() {
   if (window.location.pathname.includes('en.html')){
     $.backstretch('./img/BG_HEADER_EN.jpg');
   }else{
-    $.backstretch('./img/BG_HEADER_FR.jpg');
+    $.backstretch('./img/BG_HEADER_FR-2.jpg');
   }
 
 
@@ -162,6 +162,7 @@ $(document).ready(function() {
 
     var elem = $(this),
       title = elem.find('.project-title').text(),
+      title_class = elem.find('.project-title').data('class'),
       descr = elem.find('.project-description').html(),
       slidesHtml = '<ul class="slides">',
       elemDataCont = elem.find('.project-description');
@@ -174,6 +175,7 @@ $(document).ready(function() {
 
     slidesHtml = slidesHtml + '</ul>';
 
+    $('#project-title').addClass(title_class);
     $('#project-title').text(title);
     $('#project-content').html(descr);
     $('#project-slider').html(slidesHtml);
@@ -203,10 +205,10 @@ $(document).ready(function() {
         prevText: '<i class="fa fa-angle-left"></i>',
         nextText: '<i class="fa fa-angle-right"></i>',
         animation: 'slide',
-        slideshowSpeed: 3000,
+        slideshowSpeed: 5000,
         useCSS: true,
         controlNav: true,
-        pauseOnAction: false,
+        pauseOnAction: true,
         pauseOnHover: true,
         smoothHeight: false,
         start: function(){
@@ -223,6 +225,7 @@ $(document).ready(function() {
 
   function closeProject(){
 
+    $('#project-title').removeClass();
     $('#project-preview').removeClass('open');
     $('#project-preview').animate({'opacity':0},300);
 
@@ -232,7 +235,7 @@ $(document).ready(function() {
 
       $('#project-slider').flexslider('destroy');
       $('.masonry-wrapper').animate({'opacity':1},300);
-
+      $('#project-content').empty();
 
     },300);
 
